@@ -1,15 +1,15 @@
 package com.xiaoxu.principle.command;
 
-public class TvTurnOn implements Command{
-    private TvReceiver tvReceiver;
+public class ComputerTurnOn implements Command{
+    private ComputerReceiver computerReceiver;
 
-    public TvTurnOn(TvReceiver tvReceiver) {
-        this.tvReceiver = tvReceiver;
+    public ComputerTurnOn(ComputerReceiver computerReceiver) {
+        this.computerReceiver = computerReceiver;
     }
 
     @Override
     public void execute() {
-        System.out.println("电视-准备执行：");
-        tvReceiver.on();
+        System.out.println("电脑-准备执行：");
+        computerReceiver.on();
     }
 }

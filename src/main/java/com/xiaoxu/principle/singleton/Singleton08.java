@@ -1,2 +1,5 @@
-package com.xiaoxu.principle.singleton;public enum Singleton08 {
+package com.xiaoxu.principle.singleton;
+
+public enum Singleton08 {
+    INSTANCE();
 }

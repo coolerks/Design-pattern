@@ -1,4 +1,4 @@
-package com.xiaoxu.principle.adapter.classadapter;
+package com.xiaoxu.principle.adapter.objectadapter;
 
 public interface USB {
     void insert();

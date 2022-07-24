@@ -1,14 +1,21 @@
 package com.xiaoxu.principle.decorator;
 
 // 装饰者
-public class AppleDecorator extends Decorator{
+public class BananaDecorator extends Decorator{
 
-    public AppleDecorator(Drink drink) {
+    public BananaDecorator(Drink drink) {
         super(drink);
+        introduce = "香蕉配料（3元）";
+    }
+
+    public BananaDecorator(Drink drink, int count) {
+        super(drink, count);
+        introduce = "香蕉配料（3元）";
     }
 
     @Override
     public int cost() {
-        return count * 1 + drink.cost();
+        System.out.print(introduce + " * " + count + " + ");
+        return count * 3 + drink.cost();
     }
 }

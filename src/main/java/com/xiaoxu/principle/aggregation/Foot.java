@@ -1,2 +1,4 @@
-package com.xiaoxu.principle.aggregation;public class Foot {
+package com.xiaoxu.principle.aggregation;
+
+public class Foot {
 }

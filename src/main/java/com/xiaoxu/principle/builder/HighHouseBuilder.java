@@ -1,26 +1,26 @@
 package com.xiaoxu.principle.builder;
 
-// 普通房子
-public class OrdinaryHouseBuilder extends HouseBuilder {
-    public OrdinaryHouseBuilder(String name) {
+// 高房子
+public class HighHouseBuilder extends HouseBuilder {
+    public HighHouseBuilder(String name) {
         super(name);
     }
 
     @Override
     public void foundationBuild() {
-        System.out.println("普通房子盖地基");
-        house.setFoundation("普通房子的地基");
+        System.out.println("高房子盖地基");
+        house.setFoundation("高房子的地基");
     }
 
     @Override
     public void topBuild() {
-        System.out.println("普通房子封顶");
-        house.setFoundation("普通房子的封顶");
+        System.out.println("高房子封顶");
+        house.setFoundation("高房子的封顶");
     }
 
     @Override
     public void wallBuild() {
-        System.out.println("普通房子盖墙");
-        house.setFoundation("普通房子的墙");
+        System.out.println("高房子盖墙");
+        house.setFoundation("高房子的墙");
     }
 }

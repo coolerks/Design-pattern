@@ -1,2 +1,4 @@
-package com.xiaoxu.principle.dependence;public class Bean {
+package com.xiaoxu.principle.dependence;
+
+public class Bean {
 }

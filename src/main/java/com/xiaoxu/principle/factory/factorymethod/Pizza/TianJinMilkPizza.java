@@ -1,8 +1,8 @@
-package com.xiaoxu.principle.factory.factorymethod;
+package com.xiaoxu.principle.factory.factorymethod.Pizza;
 
-public class MilkPizza extends Pizza {
+public class TianJinMilkPizza extends Pizza {
     @Override
     public void prepare() {
-        System.out.println("牛奶披萨 正在准备");
+        System.out.println("天津牛奶披萨 正在准备");
     }
 }

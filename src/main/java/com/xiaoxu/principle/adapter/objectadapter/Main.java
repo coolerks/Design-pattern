@@ -1,4 +1,4 @@
-package com.xiaoxu.principle.adapter.classadapter;
+package com.xiaoxu.principle.adapter.objectadapter;
 
 public class Main {
     public static void main(String[] args) {

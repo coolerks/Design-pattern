@@ -1,28 +1,29 @@
 package com.xiaoxu.principle.visitor;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-public class Student extends Persion {
-    private Map<String, Integer> map = new HashMap<>();
+public class Teacher extends Persion {
+    private int[] workload = new int[5];
+    private String name;
 
-    public Student() {
+    public Teacher(String name) {
         Random random = new Random();
-        map.put("语文", random.nextInt(100));
-        map.put("数学", random.nextInt(100));
-        map.put("英语", random.nextInt(100));
+        for (int i = 0; i < workload.length; i++) {
+            workload[i] = random.nextInt(100);
+        }
+        this.name = name;
     }
 
     @Override
     public void accept(Visitor visitor) {
-
+        visitor.visit(this);
     }
 
-    public Map<String, Integer> getStudentGrade() {
-        System.out.println("科目  成绩");
-        System.out.println("---------");
-        map.forEach((k, v) -> System.out.printf("%s  %2d", k, v));
-        return map;
+    public int[] getWorkload() {
+        System.out.println(name + "老师的工作量：" + Arrays.toString(workload));
+        return workload;
     }
 }

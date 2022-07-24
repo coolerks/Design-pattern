@@ -1,4 +1,4 @@
-package com.xiaoxu.principle.factory.factorymethod;
+package com.xiaoxu.principle.factory.factorymethod.Pizza;
 
 public class BeiJingMilkPizza extends Pizza {
     @Override

@@ -1,16 +1,9 @@
-package com.xiaoxu.principle.factory.simplefactory;
+package com.xiaoxu.principle.factory.factorymethod;
 
-public class SimplePizzaFactory {
-    public Pizza createPizza(String name) {
-        Pizza pizza = null;
-        if ("milk".equals(name)) {
-            pizza = new MilkPizza();
-            pizza.setName("牛奶披萨");
-        } else if ("chicken".equals(name)) {
-            pizza = new ChickenPizza();
-            pizza.setName("鸡肉披萨");
-        }
+import com.xiaoxu.principle.factory.factorymethod.Pizza.Pizza;
+import com.xiaoxu.principle.factory.factorymethod.Pizza.TianJinChickenPizza;
+import com.xiaoxu.principle.factory.factorymethod.Pizza.TianJinMilkPizza;
 
-        return pizza;
-    }
+public abstract class PizzaFactory {
+    public abstract Pizza createPizza(String name);
 }

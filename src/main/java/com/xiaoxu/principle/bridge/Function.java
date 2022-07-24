@@ -1,2 +1,9 @@
-package com.xiaoxu.principle.bridge;public interface Function {
+package com.xiaoxu.principle.bridge;
+
+public interface Function {
+    void turnOn();
+
+    void turnOff();
+
+    void call();
 }

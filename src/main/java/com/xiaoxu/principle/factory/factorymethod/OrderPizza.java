@@ -1,13 +1,15 @@
-package com.xiaoxu.principle.factory.simplefactory;
+package com.xiaoxu.principle.factory.factorymethod;
+
+import com.xiaoxu.principle.factory.factorymethod.Pizza.Pizza;
 
 public class OrderPizza {
-    private SimplePizzaFactory simplePizzaFactory;
+    private PizzaFactory simplePizzaFactory;
 
-    public void setSimplePizzaFactory(SimplePizzaFactory simplePizzaFactory) {
+    public void setSimplePizzaFactory(PizzaFactory simplePizzaFactory) {
         this.simplePizzaFactory = simplePizzaFactory;
     }
 
-    public OrderPizza(SimplePizzaFactory simplePizzaFactory) {
+    public OrderPizza(PizzaFactory simplePizzaFactory) {
         this.simplePizzaFactory = simplePizzaFactory;
     }
 

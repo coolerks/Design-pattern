@@ -1,4 +1,4 @@
-package com.xiaoxu.principle.adapter.classadapter;
+package com.xiaoxu.principle.adapter.objectadapter;
 
 public class Computer {
     USB usb;

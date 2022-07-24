@@ -1,8 +1,10 @@
-package com.xiaoxu.principle.factory.factorymethod;
+package com.xiaoxu.principle.factory.absfactory;
 
-import com.xiaoxu.principle.factory.factorymethod.Pizza.*;
+import com.xiaoxu.principle.factory.factorymethod.Pizza.BeiJingChickenPizza;
+import com.xiaoxu.principle.factory.factorymethod.Pizza.BeiJingMilkPizza;
+import com.xiaoxu.principle.factory.factorymethod.Pizza.Pizza;
 
-public class BeiJingPizzaFactory extends PizzaFactory {
+public class BeiJingPizzaFactory implements PizzaFactory {
     @Override
     public Pizza createPizza(String name) {
         Pizza pizza = null;

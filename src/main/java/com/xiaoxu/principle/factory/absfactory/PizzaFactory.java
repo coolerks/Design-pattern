@@ -1,9 +1,7 @@
-package com.xiaoxu.principle.factory.factorymethod;
+package com.xiaoxu.principle.factory.absfactory;
 
 import com.xiaoxu.principle.factory.factorymethod.Pizza.Pizza;
-import com.xiaoxu.principle.factory.factorymethod.Pizza.TianJinChickenPizza;
-import com.xiaoxu.principle.factory.factorymethod.Pizza.TianJinMilkPizza;
 
-public abstract class PizzaFactory {
-    public abstract Pizza createPizza(String name);
+public interface PizzaFactory {
+    Pizza createPizza(String name);
 }
